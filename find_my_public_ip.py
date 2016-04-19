@@ -1,5 +1,5 @@
 # find_my_public_ip.py
-# Python 2.7.6
+# Python 3.5
 
 import requests
 from bs4 import BeautifulSoup
