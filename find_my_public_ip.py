@@ -2,7 +2,7 @@
 # Python 2.7.6
 
 import requests
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 
 url = "http://checkip.dyndns.com/"
 
@@ -16,7 +16,7 @@ def get_ip():
         resp = requests.get(url)
 
         if resp.ok:
-            soup = BeautifulSoup(resp.content)
+            soup = BeautifulSoup(resp.content, "lxml")
             return soup.find("body").getText()
 
     except requests.exceptions.ConnectionError as e:
@@ -25,4 +25,4 @@ def get_ip():
 if __name__ == "__main__":
     """ Block to test the library fuction directly """
 
-    print get_ip()
+    print(get_ip())
