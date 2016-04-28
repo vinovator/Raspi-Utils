@@ -8,7 +8,7 @@ Raspberry pi will use this mapping file to determine relevant response
 
 # Utility library, relative with respect to the calling script
 from UTILS.find_my_public_ip import get_ip
-from UTILS.get_forex_rate_py2 import get_GBP_INR_rate
+from UTILS.get_forex_rate import get_GBP_INR_rate
 
 # List of predefined questions and responses for raspberry pi
 mail_map = {
