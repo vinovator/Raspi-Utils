@@ -1,4 +1,4 @@
-# get_forex_rate.py
+# get_forex_rate_py2.py
 # Python 2.7.6
 
 """
