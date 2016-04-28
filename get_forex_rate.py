@@ -1,5 +1,5 @@
-# get_forex_rate_py2.py
-# Python 2.7.6
+# get_forex_rate.py
+# Python 3.5
 
 """
 parse the forex rates from fixer api
@@ -8,8 +8,8 @@ send mail alert to specific email
 """
 
 import requests
-# for python 3.x use urllib.parse
-from urllib import urlencode
+# for python 2.x use urllib
+from urllib.parse import urlencode
 
 api = "http://api.fixer.io/latest"
 base_currency = {"base": "GBP"}
