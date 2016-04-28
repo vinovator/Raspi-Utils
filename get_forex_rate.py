@@ -29,7 +29,7 @@ def get_GBP_INR_rate():
 
     INR_rate = rates["rates"]["INR"]
 
-    return INR_rate
+    return str(INR_rate)
 
 
 if __name__ == "__main__":
